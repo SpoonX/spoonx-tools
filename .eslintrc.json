@@ -1,0 +1,6 @@
+{
+  "extends": "./../aurelia-tools/.eslintrc.json",
+  "rules": {
+    "no-new-func": 0
+  }
+}
