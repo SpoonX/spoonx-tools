@@ -11,6 +11,9 @@
     "url": "git+https://github.com/SpoonX/spoonx-tools.git"
   },
   "author": "SpoonX <info@spoonx.nl>",
+  "contributors": [
+    "Dirk Eisinger <doktordirk@outlook.de>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SpoonX/spoonx-tools/issues"
