@@ -43,7 +43,9 @@ var paths = {
   resources: appRoot + '{**/*.css,**/*.html}',
 
   sort: true,
-  concat: true
+  concat: true,
+
+  karma: {}
 };
 
 // merge settings
