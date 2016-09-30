@@ -12,7 +12,7 @@ var assign      = Object.assign || require('object.assign');
 gulp.task('test', ['lint'], function(done) {
   server.start(function() {
     var karmaServer = new KarmaServer(
-      assign(path.karma, {
+      assign(paths.karma, {
         configFile: __dirname + '/../../karma.conf.js',
         singleRun: true
     }), function(exitCode) {
@@ -36,7 +36,7 @@ gulp.task('tdd', function(done) {
       assign(paths.karma, {
         configFile: __dirname + '/../../karma.conf.js',
         singleRun: args.once === 'true',
-        browsers: [args.browser || 'Chrome']
+        browsers: [args.browser]
       }), function(exitCode) {
       server.stop(function() {
         done();
