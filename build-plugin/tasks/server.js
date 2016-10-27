@@ -18,8 +18,9 @@ app.post('/uploads', upload.single(), function(req, res) {
     body: req.body,
     method: req.method,
     contentType: req.header('content-type'),
-    Authorization: req.header('Authorization')
-    });
+    Authorization: req.header('Authorization'),
+    originalUrl: req.originalUrl
+  });
 });
 
 app.all('*', function(req, res) {
@@ -29,7 +30,8 @@ app.all('*', function(req, res) {
     body: req.body,
     method: req.method,
     contentType: req.header('content-type'),
-    Authorization: req.header('Authorization')
+    Authorization: req.header('Authorization'),
+    originalUrl: req.originalUrl
   });
 });
 
