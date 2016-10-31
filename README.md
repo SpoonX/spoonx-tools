@@ -13,7 +13,10 @@ The options for spoonx-tools can be set in `spoonx.js`. There are some other fil
 - contains a karma testing setup
 - sensible eslint rules
 - all settings combined in `spoonx.js`
+- testing express server routes are to be set in the plugin's `gulpfile.js`.
 
-## Doumentation
+## Documentation
 
-See [aurelia-plugin-skeleton](https://github.com/SpoonX/aurelia-plugin-skeleton) 
+Type `gulp help` for the available tasks.
+
+For a starter plugin project, see [aurelia-plugin-skeleton](https://github.com/SpoonX/aurelia-plugin-skeleton).
