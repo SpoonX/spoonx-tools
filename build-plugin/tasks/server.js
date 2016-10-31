@@ -31,7 +31,9 @@ app.all('*', function(req, res) {
     method: req.method,
     contentType: req.header('content-type'),
     Authorization: req.header('Authorization'),
-    originalUrl: req.originalUrl
+    originalUrl: req.originalUrl,
+    access_token: req.body.access_token,
+    refresh_token: req.body.refresh_token
   });
 });
 
