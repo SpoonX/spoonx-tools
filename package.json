@@ -1,10 +1,10 @@
 {
   "name": "spoonx-tools",
-  "version": "0.3.0",
+  "version": "1.0.0-0",
   "description": "Tools for aurelia based plugins",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postpublish": "git push upstream master && git push upstream --tags"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,6 @@
     "url": "https://github.com/SpoonX/spoonx-tools/issues"
   },
   "homepage": "https://github.com/SpoonX/spoonx-tools#readme",
-  "scripts": {
-    "postpublish": "git push upstream master && git push upstream --tags"
-  },
   "dependencies": {
     "aurelia-tools": "^0.2.4",
     "babel-dts-generator": "^0.6.2",
