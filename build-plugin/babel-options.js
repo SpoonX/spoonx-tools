@@ -36,19 +36,19 @@ exports.base = function() {
 
 exports.commonjs = function() {
   var options = exports.base();
-  options.presets[0].modules = 'commonjs';
+  options.plugins.push('transform-es2015-modules-commonjs');
   return options;
 };
 
 exports.amd = function() {
   var options = exports.base();
-  options.presets[0].modules = 'amd';
+  options.plugins.push('transform-es2015-modules-amd');
   return options;
 };
 
 exports.system = function() {
   var options = exports.base();
-  options.presets[0].modules = 'systemjs';
+  options.plugins.push('transform-es2015-modules-systemjs');
   return options;
 };
 
